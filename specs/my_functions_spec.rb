@@ -1,16 +1,10 @@
-# ARRANGE
-# ACT
-# ASSERT
-
-
-require("minitest/autorun") #global function used to run minitest, ruby does all the work
-require_relative("../my_functions") #used to get a file from outside the directory
-
+require("minitest/autorun")
+require_relative("../my_functions")
 class MyFunctionsTest < MiniTest::Test
 
   def test_add
     result = add(2,3)
-    assert_equal(5, result)  #checks if both are the same, same as ==
+    assert_equal(5, result)
   end
 
 
@@ -20,20 +14,20 @@ class MyFunctionsTest < MiniTest::Test
   end
 
 
-def test_multiply()
-    multiply_result = multiply( 4, 2 )
-    assert_equal( 8, multiply_result )
+  def test_multiply()
+    multiply_result = multiply(4, 2)
+    assert_equal(8, multiply_result )
   end
 
   def test_divide()
-    divide_result = divide( 10, 2 )
-    assert_equal( 5, divide_result )
+    divide_result = divide(10, 2)
+    assert_equal(5, divide_result )
   end
 
   def test_length_of_string()
     test_string = "A string of length 21"
     length_of_string = length_of_string( test_string )
-    assert_equal( 21, length_of_string )
+    assert_equal(21, length_of_string )
   end
 
   def test_join_string()
@@ -78,13 +72,15 @@ def test_multiply()
 
   #Given the radius of a sphere calculate the volume
   def test_volume_of_sphere()
-    volume = sphere_radius(3).round(1)
+    volume = volume_of_sphere(3).round(1)
     assert_equal(113.1, volume)
   end
 
   #Given a value in farenheit, convert this into celsius.
   def test_fahrenheit_to_celsius()
-    #add test code here
+    fahrenheit = fahrenheit_to_celsius(50)
+    assert_equal(10, fahrenheit)
   end
 
-end
+
+end 
