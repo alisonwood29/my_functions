@@ -1,37 +1,4 @@
-# FUNCTION DEFINITION
-#   v
-#   v
-#   V
-#   V        PARAMETER (empty vessel waiting to be filled)
-#   V         V
-#  def greet(name) <<< FUNCTION NAME
-#   words = "Hello" + name <<< FUNCTION BODY
-#   return words
-# end
-#
-# p greet("name") <<< FUNCTION CALL/INVOCATION
-#            ^
-#         ARGUMENT
-#
-#
-# --------------------------------------------------------------------
-#
-# def greet(input_name, time_of_day)
-#   words = "Hello #{input_name}, good #{time_of_day}"
-#   return words
-# end
-#
-# name = "Robert"
-# time = "evening"
-#
-# p greet(name, time)
 
-# ----------------------------------------------------------------------
-# def greet? () is a bullion and should return either a true or false
-# "words = x" is a variable
-# once ruby finds a "return" function, it doesnt care about anything after it
-
-# ------------------------------------------------------------------------
 
 def add(first_number, second_number)
     return first_number + second_number
@@ -85,11 +52,10 @@ def number_to_short_month_name(number)
   end
 end
 
-# def population_density(population, area)
-#   return population / area
-# end
-#
-#
-# p population_density(5373000, 77933)
+def volume_of_cube(cube_length)
+  return cube_length ** 3
+end
 
-# ------------------------------------------------------------------------
+def sphere_radius(radius)
+  return (4/3) * (Math::PI) * (radius ** 3)
+end
