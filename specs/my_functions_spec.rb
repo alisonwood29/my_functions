@@ -78,7 +78,7 @@ def test_multiply()
 
   #Given the radius of a sphere calculate the volume
   def test_volume_of_sphere()
-    volume = sphere_radius(3)
+    volume = sphere_radius(3).round(1)
     assert_equal(113.1, volume)
   end
 
