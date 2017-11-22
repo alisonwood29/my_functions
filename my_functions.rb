@@ -40,14 +40,15 @@ def number_to_full_month_name(number)
 end
 
 def number_to_short_month_name(number)
-  case number
+  month_name = case number
   when 1
-    return "Jan"
+    "Jan"
   when 3
-    return "Mar"
+     "Mar"
   when 9
-    return "Sep"
+     "Sep"
   end
+  return month_name 
 end
 
 def volume_of_cube(cube_length)

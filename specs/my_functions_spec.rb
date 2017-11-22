@@ -1,4 +1,5 @@
 require("minitest/autorun")
+require "minitest/rg"
 require_relative("../my_functions")
 class MyFunctionsTest < MiniTest::Test
 
@@ -83,4 +84,4 @@ class MyFunctionsTest < MiniTest::Test
   end
 
 
-end 
+end
